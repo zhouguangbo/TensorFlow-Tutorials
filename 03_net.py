@@ -39,3 +39,5 @@ with tf.Session() as sess:
             sess.run(train_op, feed_dict={X: trX[start:end], Y: trY[start:end]})
         print(i, np.mean(np.argmax(teY, axis=1) ==
                          sess.run(predict_op, feed_dict={X: teX})))
+
+tf.nn.conv2d
